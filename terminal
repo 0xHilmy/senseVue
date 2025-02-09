@@ -1,0 +1,4 @@
+npx create-next-app@latest sensor-monitoring-dashboard --typescript --tailwind --eslint
+cd sensor-monitoring-dashboard
+npm install @mui/icons-material mqtt react-grid-layout recharts
+npm run dev 
