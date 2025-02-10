@@ -22,7 +22,6 @@ export default function EditDashboard() {
     }
 
     setWidgets([...widgets, newWidget])
-    setLayout([...layout, { i: newWidget.id, x: 0, y: 0, w: 6, h: 4 }])
   }
 
   return (
