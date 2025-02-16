@@ -2,7 +2,6 @@
 
 import { useState, useEffect } from 'react'
 import { 
-  Settings as SettingsIcon,
   Close as CloseIcon 
 } from '@mui/icons-material'
 import { ProtocolConfig, ProtocolType, Widget } from '@/app/types/widget'

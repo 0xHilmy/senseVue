@@ -60,12 +60,5 @@ export interface Widget {
   title: string
   protocol?: ProtocolConfig
   dataConfig?: DataConfig
-  config: {
-    datasource?: string
-    query?: string
-    visualization?: {
-      type?: string
-      options?: any
-    }
-  }
+  config: Record<string, unknown>
 } 

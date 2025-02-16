@@ -30,7 +30,6 @@ export default function EditDashboard() {
   const [editingTitle, setEditingTitle] = useState<string | null>(null)
   const [isDraggable, setIsDraggable] = useState(true)
   const [containerWidth, setContainerWidth] = useState(1200)
-  const [isDraggingWidget, setIsDraggingWidget] = useState(false)
   const [history, setHistory] = useState<HistoryState[]>([])
   const [historyIndex, setHistoryIndex] = useState(-1)
   const [dashboardConfig, setDashboardConfig] = useState<DashboardConfig>({
@@ -146,15 +145,6 @@ export default function EditDashboard() {
     setLayout(newLayout)
   }, [])
 
-  const handleDragStart = () => {
-    setIsDraggingWidget(true)
-  }
-
-  const handleDragStop = () => {
-    setIsDraggingWidget(false)
-    addToHistory()
-  }
-
   const handleProtocolUpdate = (protocol: ProtocolConfig) => {
     addToHistory()
     setDashboardConfig(prev => ({ ...prev, protocol }))
@@ -200,8 +190,6 @@ export default function EditDashboard() {
             compactType="vertical"
             preventCollision={false}
             useCSSTransforms={true}
-            onDragStart={handleDragStart}
-            onDragStop={handleDragStop}
           >
             {widgets.map((widget) => (
               <div 

@@ -38,4 +38,6 @@ class MQTTService {
   }
 }
 
-export default new MQTTService() 
+const mqttService = new MQTTService()
+
+export default mqttService 
