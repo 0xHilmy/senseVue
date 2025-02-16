@@ -8,7 +8,6 @@ import {
   GridOn,
   BarChart,
   PieChart,
-  TextFields,
   Notifications,
   List,
   TrendingUp,
@@ -23,19 +22,19 @@ const WIDGET_CATEGORIES = [
     icon: <Timeline className="w-5 h-5" />,
     widgets: [
       {
-        type: 'timeseries',
+        type: 'timeseries' as WidgetType,
         title: 'Time Series',
         icon: <Timeline />,
         description: 'Visualize time series data'
       },
       {
-        type: 'gauge',
+        type: 'gauge' as WidgetType,
         title: 'Gauge',
         icon: <Speed />,
         description: 'Display current values as gauge'
       },
       {
-        type: 'stat',
+        type: 'stat' as WidgetType,
         title: 'Stat',
         icon: <TrendingUp />,
         description: 'Show single stat with sparkline'
@@ -47,25 +46,25 @@ const WIDGET_CATEGORIES = [
     icon: <BarChart className="w-5 h-5" />,
     widgets: [
       {
-        type: 'table',
+        type: 'table' as WidgetType,
         title: 'Table',
         icon: <TableChart />,
         description: 'Display data in table format'
       },
       {
-        type: 'heatmap',
+        type: 'heatmap' as WidgetType,
         title: 'Heat Map',
         icon: <GridOn />,
         description: 'Show patterns in sensor data'
       },
       {
-        type: 'barchart',
+        type: 'barchart' as WidgetType,
         title: 'Bar Chart',
         icon: <BarChart />,
         description: 'Compare values with bars'
       },
       {
-        type: 'piechart',
+        type: 'piechart' as WidgetType,
         title: 'Pie Chart',
         icon: <PieChart />,
         description: 'Show data distribution'
@@ -77,13 +76,13 @@ const WIDGET_CATEGORIES = [
     icon: <Notifications className="w-5 h-5" />,
     widgets: [
       {
-        type: 'alert',
+        type: 'alert' as WidgetType,
         title: 'Alert List',
         icon: <Notifications />,
         description: 'Show alert history and status'
       },
       {
-        type: 'logs',
+        type: 'logs' as WidgetType,
         title: 'Logs',
         icon: <List />,
         description: 'Display sensor logs'

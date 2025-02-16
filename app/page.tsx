@@ -424,7 +424,7 @@ export default function Home() {
                     <br />
                     <span className="text-slate-300">ws.onmessage = (</span>
                     <span className="text-violet-400">event</span>
-                    <span className="text-slate-300">) => {`{`}</span>
+                    <span className="text-slate-300">) => {'{'}</span>
                     <br />
                     <span className="text-slate-300">&nbsp;&nbsp;console.log(event.data)</span>
                     <br />
