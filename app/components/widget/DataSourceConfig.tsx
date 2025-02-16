@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react'
 import { Close as CloseIcon } from '@mui/icons-material'
-import { Widget, DataConfig, ProtocolConfig } from '@/app/types/widget'
+import { Widget, DataConfig } from '@/app/types/widget'
 
 interface DataSourceConfigProps {
   widget: Widget

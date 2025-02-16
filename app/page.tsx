@@ -12,7 +12,6 @@ import {
   DeviceHub
 } from '@mui/icons-material'
 import Link from 'next/link'
-import SearchBox from './components/SearchBox'
 import Image from 'next/image'
 import { useState } from 'react'
 
@@ -272,7 +271,7 @@ export default function Home() {
                 Real-time Data with MQTT
               </h4>
               <p className="text-slate-400">
-                Perfect for real-time IoT applications. MQTT's publish-subscribe model enables efficient 
+                Perfect for real-time IoT applications. MQTT&apos;s publish-subscribe model enables efficient 
                 data transmission with minimal overhead, ideal for resource-constrained devices.
               </p>
               <div className="flex flex-col gap-3">
@@ -311,13 +310,13 @@ export default function Home() {
                 </div>
                 <div className="space-y-3 font-mono text-sm">
                   <div className="bg-slate-900/50 p-3 rounded-lg">
-                    <span className="text-emerald-400">// Publishing sensor data</span>
+                    <span className="text-emerald-400">{`// Publishing sensor data`}</span>
                     <br />
                     <span className="text-violet-400">mqtt</span>
                     <span className="text-slate-300">.publish(</span>
-                    <span className="text-amber-400">'sensors/temp'</span>
+                    <span className="text-amber-400">&apos;sensors/temp&apos;</span>
                     <span className="text-slate-300">, </span>
-                    <span className="text-emerald-400">'{`{"value": 25.4}`}'</span>
+                    <span className="text-emerald-400">&apos;{`{"value": 25.4}`}&apos;</span>
                     <span className="text-slate-300">)</span>
                   </div>
                 </div>
@@ -331,7 +330,7 @@ export default function Home() {
               <div className="backdrop-blur-md bg-slate-800/40 p-6 rounded-xl border border-slate-700/50">
                 <div className="space-y-3 font-mono text-sm">
                   <div className="bg-slate-900/50 p-3 rounded-lg">
-                    <span className="text-emerald-400">// HTTP POST Request</span>
+                    <span className="text-emerald-400">{`// HTTP POST Request`}</span>
                     <br />
                     <span className="text-violet-400">POST</span>
                     <span className="text-slate-300"> /api/sensors/data</span>
@@ -411,16 +410,16 @@ export default function Home() {
               <div className="backdrop-blur-md bg-slate-800/40 p-6 rounded-xl border border-slate-700/50">
                 <div className="space-y-3 font-mono text-sm">
                   <div className="bg-slate-900/50 p-3 rounded-lg">
-                    <span className="text-emerald-400">// WebSocket connection</span>
+                    <span className="text-emerald-400">{`// WebSocket connection`}</span>
                     <br />
                     <span className="text-violet-400">const</span>
                     <span className="text-slate-300"> ws = </span>
                     <span className="text-violet-400">new</span>
                     <span className="text-slate-300"> WebSocket(</span>
-                    <span className="text-amber-400">'ws://api/sensors'</span>
+                    <span className="text-amber-400">&apos;ws://api/sensors&apos;</span>
                     <span className="text-slate-300">)</span>
                     <br /><br />
-                    <span className="text-emerald-400">// Real-time data handling</span>
+                    <span className="text-emerald-400">{`// Real-time data handling`}</span>
                     <br />
                     <span className="text-slate-300">ws.onmessage = (</span>
                     <span className="text-violet-400">event</span>
