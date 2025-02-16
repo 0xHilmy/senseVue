@@ -11,6 +11,11 @@ interface DataSourceConfigProps {
   onClose: () => void
 }
 
+interface ConfigData {
+  protocol: string;
+  settings: Record<string, unknown>;
+}
+
 export default function DataSourceConfig({
   widget,
   onUpdate,
@@ -152,7 +157,7 @@ export default function DataSourceConfig({
               </label>
               <select
                 value={config.dataType}
-                onChange={(e) => setConfig({ ...config, dataType: e.target.value as any })}
+                onChange={(e) => setConfig({ ...config, dataType: e.target.value as ConfigData })}
                 className="w-full bg-slate-900/50 border border-slate-700 rounded-lg px-3 py-2 text-white"
               >
                 <option value="number">Number</option>
@@ -194,7 +199,7 @@ export default function DataSourceConfig({
               </label>
               <select
                 value={config.aggregation || 'none'}
-                onChange={(e) => setConfig({ ...config, aggregation: e.target.value as any })}
+                onChange={(e) => setConfig({ ...config, aggregation: e.target.value as ConfigData })}
                 className="w-full bg-slate-900/50 border border-slate-700 rounded-lg px-3 py-2 text-white"
               >
                 <option value="none">None</option>
@@ -212,7 +217,7 @@ export default function DataSourceConfig({
               </label>
               <select
                 value={config.transformation || 'raw'}
-                onChange={(e) => setConfig({ ...config, transformation: e.target.value as any })}
+                onChange={(e) => setConfig({ ...config, transformation: e.target.value as ConfigData })}
                 className="w-full bg-slate-900/50 border border-slate-700 rounded-lg px-3 py-2 text-white"
               >
                 <option value="raw">Raw Value</option>
