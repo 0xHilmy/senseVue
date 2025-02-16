@@ -683,7 +683,7 @@ export default function Home() {
               <h4 className="text-white font-semibold mb-4">Connect</h4>
               <div className="flex gap-4 mb-6">
                 <a 
-                  href="https://github.com" 
+                  href="https://github.com/0xHilmy" 
           target="_blank"
           rel="noopener noreferrer"
                   className="w-8 h-8 rounded-lg bg-slate-800 hover:bg-slate-700 flex items-center justify-center text-slate-400 hover:text-violet-400 transition-colors"
