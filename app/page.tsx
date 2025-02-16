@@ -33,7 +33,7 @@ export default function Home() {
               </div>
               <div>
                 <span className="text-2xl font-semibold bg-gradient-to-r from-violet-400 to-indigo-400 text-transparent bg-clip-text">
-                  senseVue
+                  QMY-senseVue
                 </span>
                 
               </div>
@@ -590,7 +590,7 @@ export default function Home() {
                   <span className="text-xl font-bold text-white">S</span>
                 </div>
                 <span className="text-2xl font-semibold bg-gradient-to-r from-violet-400 to-indigo-400 text-transparent bg-clip-text">
-                  senseVue
+                  QMY-senseVue
                 </span>
               </div>
               <p className="text-slate-400 text-sm mb-4">
@@ -736,7 +736,7 @@ export default function Home() {
                 <Link href="/security" className="hover:text-violet-400 transition-colors">Security</Link>
               </div>
               <p className="text-sm text-slate-500">
-                © 2024 SenseVue. All rights reserved.
+                © 2024 QMY. All rights reserved.
               </p>
             </div>
           </div>
