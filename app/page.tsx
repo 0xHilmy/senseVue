@@ -271,7 +271,7 @@ export default function Home() {
                 Real-time Data with MQTT
               </h4>
               <p className="text-slate-400">
-                Perfect for real-time IoT applications. MQTT's publish-subscribe model enables efficient 
+                Perfect for real-time IoT applications. MQTT&apos;s publish-subscribe model enables efficient 
                 data transmission with minimal overhead, ideal for resource-constrained devices.
               </p>
               <div className="flex flex-col gap-3">
