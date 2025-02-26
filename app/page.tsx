@@ -182,12 +182,16 @@ export default function Home() {
                 {/* Main Chart */}
                 <div className="transform rotate-[-5deg] translate-y-4 translate-x-4 sm:translate-x-8">
                   <div className="backdrop-blur-md bg-slate-800/40 p-2 sm:p-4 rounded-xl border border-slate-700/50 shadow-xl">
-        <Image
-                      src="/public/chart1.png"
+                    <Image
+                      src="/chart2.png"
                       alt="Chart Preview"
                       width={600}
                       height={300}
+                      priority
                       className="rounded-lg w-full h-auto"
+                      onError={(e) => {
+                        console.error('Error loading chart1:', e);
+                      }}
                     />
                   </div>
                 </div>
@@ -206,12 +210,16 @@ export default function Home() {
                 {/* Area Chart */}
                 <div className="transform -rotate-[8deg] -translate-y-[10px] sm:-translate-y-[20px]">
                   <div className="backdrop-blur-md bg-slate-800/40 p-2 sm:p-4 rounded-xl border border-slate-700/50 shadow-xl">
-            <Image
-                      src="/public/chart2.png"
+                    <Image
+                      src="/chart1.png"
                       alt="Area Chart"
                       width={500}
                       height={250}
+                      priority
                       className="rounded-lg w-full h-auto"
+                      onError={(e) => {
+                        console.error('Error loading chart2:', e);
+                      }}
                     />
                   </div>
                 </div>
@@ -271,7 +279,7 @@ export default function Home() {
                 Real-time Data with MQTT
               </h4>
               <p className="text-slate-400">
-                Perfect for real-time IoT applications. MQTT&apos;s publish-subscribe model enables efficient 
+                Perfect for real-time IoT applications. MQTT's publish-subscribe model enables efficient 
                 data transmission with minimal overhead, ideal for resource-constrained devices.
               </p>
               <div className="flex flex-col gap-3">
