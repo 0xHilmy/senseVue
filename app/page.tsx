@@ -207,7 +207,7 @@ export default function Home() {
                 <div className="transform -rotate-[8deg] -translate-y-[10px] sm:-translate-y-[20px]">
                   <div className="backdrop-blur-md bg-slate-800/40 p-2 sm:p-4 rounded-xl border border-slate-700/50 shadow-xl">
                     <Image
-                      src="/chart2.png"
+                      src="/chart2.jpg"
                       alt="Area Chart"
                       width={500}
                       height={250}
