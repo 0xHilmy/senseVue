@@ -183,7 +183,7 @@ export default function Home() {
                 <div className="transform rotate-[-5deg] translate-y-4 translate-x-4 sm:translate-x-8">
                   <div className="backdrop-blur-md bg-slate-800/40 p-2 sm:p-4 rounded-xl border border-slate-700/50 shadow-xl">
         <Image
-                      src="/chart1.png"
+                      src="/public/chart1.png"
                       alt="Chart Preview"
                       width={600}
                       height={300}
@@ -207,7 +207,7 @@ export default function Home() {
                 <div className="transform -rotate-[8deg] -translate-y-[10px] sm:-translate-y-[20px]">
                   <div className="backdrop-blur-md bg-slate-800/40 p-2 sm:p-4 rounded-xl border border-slate-700/50 shadow-xl">
             <Image
-                      src="/chart2.png"
+                      src="/public/chart2.png"
                       alt="Area Chart"
                       width={500}
                       height={250}
